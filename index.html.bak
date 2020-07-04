@@ -658,13 +658,15 @@
 		   <span>
 				<!-- <center><span style="font-size:28px"><b>Cite</b></span></center> -->
 				<pre style="font-family:Courier; font-size:14px">@inproceedings{Wu2020not,
-title={Not only Look, but also Listen: Learning Multimodal Violence Detection under Weak Supervision},
-author={Wu, Peng and Liu, jing and Shi, Yujia and Sun, Yujia and Shao, Fangtao and Wu, Zhaoyang and Yang, Zhiwei},
+title={Not only Look, but also Listen: Learning Multimodal Violence Detection under 
+Weak Supervision},
+author={Wu, Peng and Liu, jing and Shi, Yujia and Sun, Yujia and Shao, Fangtao 
+and Wu, Zhaoyang and Yang, Zhiwei},
 booktitle={European Conference on Computer Vision (ECCV)},
 year={2020}
 }
 				</pre>
-		  </span></div><table align="center" width="720px">
+		  </span></div><table align="center" width="1020px">
 			
 		  
   		  </table>
