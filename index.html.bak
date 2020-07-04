@@ -680,7 +680,7 @@ year={2020}
   	              <td width="400px">
   					<left>
 	  		  <center><h1>Acknowledgements</h1></center>
-				We sincerely thank Wang Chao, Ying Chaolong, and Yuan Kaixin for their excellent annotation work.
+				We sincerely thank <b>Wang Chao</b>, <b>Ying Chaolong</b>, and <b>Yuan Kaixin</b> for their excellent annotation work.
 				This work is partially supported by XXX.
 				The template of this webpage is borrowed from <a href="https://richzhang.github.io/colorization/">Richard Zhang</a><a>.
 			</a></left><a>
