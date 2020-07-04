@@ -147,7 +147,7 @@
     <br>
           <center>
           	<span style="font-size:42px">Not only Look, but also Listen: Learning Multimodal Violence Detection under Weak Supervision</span>
-	  		  <table align="center" width="800px">
+	  		  <table align="center" width="600px">
 	  			  <tbody><tr>
 	  	              <td align="center" width="100px">
 	  					<center>
@@ -171,7 +171,7 @@
 					</td>
 					</tr></tbody></table>
 
-			  <table align="center" width="800px">
+			  <table align="center" width="600px">
 				  <tbody><tr>
 					<td align="center" width="100px">
 						<center>
@@ -199,7 +199,7 @@
 						</center>
 					  </td>
 			  </tr></tbody></table>
-			EUROPEAN CONFERENCE ON COMPUTER VISION (<a href="https://eccv2020.eu/" target="_blank">ECCV</a>) 2020, <font color="#e86e14">Poster Presentation</font>
+			European Conference on Computer Vision (<a href="https://eccv2020.eu/" target="_blank">ECCV</a>) 2020, <font color="#e86e14">Poster Presentation</font>
           </center>
 
    		  <br><br>
@@ -230,16 +230,7 @@
 		  </table>
 		  <center>
 			<span>
-		 	On public benchmarks, current action recognition techniques have achieved great success.
-		  	However, when used in real-world applications, e.g. sport analysis, which requires the capability of parsing an activity into phases and differentiating between subtly different actions, their performances remain far from being satisfactory.
-		  	To take action recognition to a new level, we develop <i>FineGym</i>, a new dataset built on top of gymnasium videos.
-		  	Compared to existing action recognition datasets, FineGym is distinguished in richness, quality, and diversity.
-		  	In particular, it provides temporal annotations at both action and sub-action levels with a three-level semantic hierarchy.
-		  	For example, a <i>"balance beam"</i> event will be annotated as a sequence of elementary sub-actions derived from five sets:
-		  	<i>"leap-jumphop"</i>, <i>"beam-turns"</i>, <i>"flight-salto"</i>, <i>"flight-handspring"</i>, and <i>"dismount"</i>, 
-		  	where the sub-action in each set will be further annotated with finely defined class labels.
-		  	This new level of granularity presents significant challenges for action recognition, e.g. how to parse the temporal structures from a coherent action, and how to distinguish between subtly different action classes.
-		  	We systematically investigate representative methods on this dataset and obtain a number of interesting findings. We hope this dataset could advance research towards action understanding.
+		 	Violence detection has been studied in computer vision for years. However, previous work are either superficial, e.g., classification of short-clips, and the single scenario, or undersupplied, e.g., the single modality, and hand-crafted features based multimodality. To address this problem, in this work we first release a large-scale and multi-scene dataset named XD-Violence with a total duration of 217 hours, containing 4754 untrimmed videos with audio signals and weak labels. Then we propose a neural network containing three parallel branches to capture different relations among video snippets and integrate features, where holistic branch captures long-range dependencies using similarity prior, localized branch captures local positional relation using proximity prior, and score branch dynamically captures the closeness of predicted score. Besides, our method also includes an approximator to meet the needs of online detection. Our method outperforms other state-of-the-art methods on our released dataset and other existing benchmark. Moreover, extensive experimental results also show the positive effect of multimodal input and modeling relationships.
 		  	</span>
 		  </center>
   		  <br><br>
@@ -251,15 +242,12 @@
 				</tr></tbody></table><table align="center" width="720px">
 					<tbody><tr>
 						<td align="center" width="720px">
-							<iframe width="600" height="320" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/notLDzBJ2mg.html" frameborder="0" allowfullscreen=""></iframe>
+							<iframe width="600" height="320" src=".https://roc-ng.github.io/XD-Violence/" frameborder="0" allowfullscreen=""></iframe>
 						</td>
 					  </tr>
 					<tr>
 						<td align="center" width="720px">
-						  <span style="font-size:14px"><i>
-							An illustrative video of FineGym's hiecharcial annotations given a complete competition.
-							Action and subaction boundaries are highlighted while irrelevant fragments are fast-forwarded.
-							We also present the tree-based process at the end of the demo video.</i>
+						  <span style="font-size:14px">To Be Continued 
 						</span>
 						   </td>
 					  </tr>
@@ -669,10 +657,10 @@
 
 		   <span>
 				<!-- <center><span style="font-size:28px"><b>Cite</b></span></center> -->
-				<pre style="font-family:Courier; font-size:14px">@inproceedings{shao2020finegym,
-title={FineGym: A Hierarchical Video Dataset for Fine-grained Action Understanding},
-author={Shao, Dian and Zhao, Yue and Dai, Bo and Lin, Dahua},
-booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+				<pre style="font-family:Courier; font-size:14px">@inproceedings{Wu2020not,
+title={Not only Look, but also Listen: Learning Multimodal Violence Detection under Weak Supervision},
+author={Wu, Peng and Liu, jing and Shi, Yujia and Sun, Yujia and Shao, Fangtao and Wu, Zhaoyang and Yang, Zhiwei},
+booktitle={European Conference on Computer Vision (ECCV)},
 year={2020}
 }
 				</pre>
@@ -690,7 +678,7 @@ year={2020}
   	              <td width="400px">
   					<left>
 	  		  <center><h1>Acknowledgements</h1></center>
-				We sincerely thank the outstanding annotation team for their excellent work.
+				We sincerely thank Wang Chao, Ying Chaolong, and Yuan Kaixin for their excellent annotation work.
 				This work is partially supported by SenseTime Collaborative Grant on Large-scale Multi-modality Analysis
 				and the General Research Funds (GRF) of Hong Kong (No. 14203518 and No. 14205719).
 				The template of this webpage is borrowed from <a href="https://richzhang.github.io/colorization/">Richard Zhang</a><a>.
