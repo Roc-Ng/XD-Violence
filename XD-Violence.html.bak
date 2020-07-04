@@ -212,7 +212,12 @@
                 </tr>
   	              <tr><td width="400px">
   					<center>
-  	                	<span style="font-size:14px"><i>Sample videos from the XD-Violence dataset.</i>
+  	                	<span style="font-size:14px"><i>An overview of the FineGym dataset.
+							We provide coarse-to-fine annotations both temporally and semantically.
+							There are three levels of categorical labels.
+							The temporal dimension (represented by the two bars) is also divided into two levels, i.e., actions and sub-actions.
+							Sub-actions could be described generally using set categories or precisely using element categories.
+							Ground-truth element categories of sub-action instances are obtained via manually constructed decision-trees.</i>
 					</span></center>
   	              </td>
 
