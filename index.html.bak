@@ -331,21 +331,21 @@
 		  <br><br>
 		  <hr>
 
-		  <center><h1>Empirical Studies and Analysis</h1></center><table align="center" width="720px">
+		  <center><h1>Dataset Statistics</h1></center><table align="center" width="720px">
 			
-			</table><center><h2> (1) Element-level action recognition raises great challenges for existing methods. </h2></center><table>
+			</table><center> </center><table>
 			
 			<tbody><tr>
 				  <td width="400px">
 				  <center>
-					  <a><img class="rounded" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/element_recognition.png" width="800px"></a><br>
+					  <a><img class="rounded" src="./XD-Violence/dataset1.png" width="800px"></a><br>
 				</center>
 				</td>
 			</tr>
 			<tr>
 				<td align="center" width="720px">
 				  <span style="font-size:14px"><i>
-					Element-level action recognition results of representative methods.</i>
+					Dataset Statistics. (a) Distribution of the number of videos belonging to each category according to multi-label. (b) Distribution of the number of videos belonging to each category according to the first label.</i>
 				</span>
 				</td>
 			</tr>
@@ -353,19 +353,19 @@
 
 			<br>
 
-			<center><h2> (2) Sparse sampling is insufficient for fine-grained action recognition. </h2></center><table>
+			<center><h2></h2></center><table>
 			
 			<tbody><tr>
 				  <td width="400px">
 				  <center>
-					  <a><img class="rounded" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/tsn_vs_nframe.png" width="320px"></a><br>
+					  <a><img class="rounded" src="./XD-Violence/dataset1.png" width="320px"></a><br>
 				</center>
 				</td>
 			</tr>
 			<tr>
 				<td align="center" width="720px">
 				  <span style="font-size:14px"><i>
-					Performances of TSN when varying the number of sampled frames during training.</i>
+					Dataset Statistics. (a) Distribution of videos according to length (minutes). (b) Distribution of violent videos according to percentage of violence (in each video) in test set.</i>
 				</span>
 				</td>
 			</tr>
@@ -696,7 +696,7 @@ year={2020}
 				<td width="400px">
 				  <left>
 			<center><h1>Contact</h1></center>
-			For further questions and suggestions, please contact Dian Shao (<a href="mailto:sd017@ie.cuhk.edu.hk">sd017@ie.cuhk.edu.hk</a>).
+			For further questions and suggestions, please contact Peng Wu (<a href="xdwupeng@gmail.com">xdwupeng@gmail.com</a>).
 			
 			
 		</left>
