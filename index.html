@@ -257,28 +257,6 @@
 		   <br><br>
 		  <hr>
 
-		  <center><h1>Dataset hierarchy</h1></center><table align="center" width="720px">
-			
-			<tbody><tr>
-				<td width="400px">
-				  <center>
-					  <a><img class="rounded" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/hierarchy.png" width="800px"></a><br>
-				</center>
-				</td>
-			</tr>
-				<tr><td width="400px">
-				  <center>
-					  <span style="font-size:14px"><i>
-						FineGym organizes both the semantic and temporal annotations hierarchically.
-						The upper part shows three levels of categorical labels, namely events (e.g. balance beam), sets (e.g. dismounts) and elements (e.g. salto forward tucked).
-						The lower part depicts the two-level temporal annotations, i.e. the temporal boundaries of actions (in the top bar) and sub-action instances (in the bottom bar).
-						</i>
-				</span></center>
-				</td>
-
-		  </tr></tbody></table>
-	      <br><br>
-		  <hr>
 
 		  <center><h1>Sub-action examples</h1></center><center>
 				<span>
@@ -402,32 +380,6 @@
 				
 			<br>
 			
-			<center><h2> (4) Why pose information does not help? </h2></center>
-				Skeleton-based ST-GCN struggles due to the challenges in skeleton estimation on gymnastics instances.
-				<table>
-				<tbody><tr>
-					<td width="400px">
-					<center>
-						<a><img onmouseover="this.src=&#39;./resources/examples/pose_slow.gif&#39;;" onmouseout="this.src=&#39;./resources/examples/pose.gif&#39;;" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/pose.gif" width="400px"></a>
-					</center>
-					</td>
-				</tr>
-				<tr>
-					<td align="center" width="720px">
-					<span style="font-size:14px"><i>
-					The results of person detection and pose estimation using <a href="https://github.com/MVIG-SJTU/AlphaPose">AlphaPose</a> for a Vault routine.
-					It can be seen that detections and pose estimations of the gymnast are missed in multiple frames, especially in frames with intense motion.
-					These frames are important for fine-grained recognition. (Hover on the GIF for a 0.25x slowdown) </i>
-					</span>
-					</td>
-				</tr>
-				</tbody></table>
-					
-		
-	      <br><br>
-		  <hr>
-
-
 		  <center><h1>Download</h1></center><table id="download" align="center" width="720px">
 			
 			<tbody><tr>
@@ -469,147 +421,7 @@
 					<span style="font-size:16px"></span>
 					</center>
 				</td>
-				</tr></tbody></table><center><h2> Updates </h2></center>
-				[16/04/2020] We fix a small issue on the naming of the subaction identifier "A_{ZZZZ}_{WWWW}" to avoid ambiguity.
-				(Thanks <a href="https://kennymckormick.github.io/">Haodong Duan</a> for pointing this out.)<br>
-				[16/04/2020] We include new subsections to track updates and address FAQs.<br><center><h2> FAQs </h2></center>
-				Q0: License issue:<br>
-				A0: The annotations of FineGym are copyright by us and published under the Creative Commons Attribution-NonCommercial 4.0 International License.<br>
-				Q1: Some links are invalid on YouTube. How can I obtain the missing videos?<br>
-				Q1': I am located in mainland China and I cannot access YouTube. How can I get the dataset?<br>
-				A1: Please submit a Google form at <a href="https://forms.gle/z8iTwRhdMsfRCNkm7">this link</a>.
-				We may reach you shortly.<br>
-				Q2: Is the event-/element-level instance in your dataset cut in integral seconds?<br>
-				A2: No. All levels of instances (actions and sub-actions) are annotated in <i>exact</i> timestamp (milliseconds) 
-				in a pursuit of frame-level preciseness.
-				The number in the identifier is derived from integral seconds due to conciseness.
-				Please refer to the instructions below for details.
-				<center><h2> How to read the temporal annotation files (JSON)? </h2></center> 
-				Below, we show an example entry from the above JSON annotation file:
-				<pre style="font-family: Courier; font-size:14px">"0LtLS9wROrk": {
-	"E_002407_002435": {
-		"event": 4,
-		"segments": {
-			"A_0003_0005": {
-				"stages": 1,
-				"timestamps": [
-					[
-						3.45,
-						5.64
-					]
-				]
-			},
-			"A_0006_0008": { ... },
-			"A_0023_0028": { ... },
-			...
-		},
-		"timestamps": [
-			[
-				2407.32,
-				2435.28
-			]
-		]
-	},
-	"E_002681_002688": {
-		"event": 1,
-		"segments": {
-			"A_0000_0006": {
-				"stages": 3,
-				"timestamps": [
-					[
-						0.04,
-						3.2
-					],
-					[
-						3.2,
-						4.49
-					],
-					[
-						4.49,
-						6.57
-					]
-				]
-			}
-		},
-		"timestamps": [
-			[
-				2681.88,
-				2688.48
-			]
-		]
-	},
-	"E_002710_002737": { ... },
-	...
-}
-				</pre><table>
 				
-				
-				</table>
-				The example shows the annotations related to this video.
-				First of all, we assign the unique identifier <a style="font-family: Courier">"0LtLS9wROrk"</a> to that video,
-				which corresponds to the 11-digit YouTube identifier. <br>
-				It contains all action (event-level) instances, whose names follow the format of <a style="font-family: Courier">"E_{XXXXXX}_{YYYYYY}"</a>.
-				Here, "E" indicates "Event", and "XXXXXX"/"YYYYYY" indicates the zero-padded starting and ending timestamp (in seconds and truncated to Int).
-				<br>
-				Each action instance includes (1) the exact timestamps in the original video ('timestamps', in seconds),
-				(2) event label ('event'), and
-				(3) a list of annotated subaction (element-level) instances ('segments').
-				<br>
-				The annotated subaction instances follow the format of <a style="font-family: Courier">"A_{ZZZZ}_{WWWW}"</a>.
-				Here, "A" indicates "subAction", and "ZZZZ"/"WWWW" indicates the zero-padded starting and ending timestamp (in seconds and truncated to Int).
-				<br>
-				Ech subaction instance includes (1) the number of stages of this subaction instance ('stages', 3 for Vault and 1 for other events)
-				(2) the exact timestamps of each stage <i>relative</i> to the starting time of event. ('timestamps', in seconds)
-				As a result, each subaction instance has a unique identifier <a style="font-family: Courier">"{VIDEO_ID}_E_{XXXXXX}_{YYYYYY}_A_{ZZZZ}_{WWWW}"</a>.
-				This identifier serves as the instance name in the train/val splits of Gym99 and Gym288.
-			
-		   
-
-		   <center><h2> How to read the question annotation files (JSON)? </h2></center>
-			Below, we show an example entry from the above JSON annotation file:
-			<pre style="font-family: Courier; font-size:14px">"0": {
-	"BTcode": "1111111",
-	"questions": [
-		"round-off onto the springboard?",
-		"turning entry after round-off (turning in first flight phase)?",
-		"Facing the coming direction when handstand on vault
-		(0.5 turn in first flight phase)?",
-		"Body keep stretched  during salto (stretched salto)?",
-		"Salto with turn?",
-		"Facing vault table after landing?",
-		"Salto with 1.5 turn?"
-	],
-	"code": "6.00"
-},
-"1": {
-	"BTcode": "1111110",
-	"questions": [
-		"round-off onto the springboard?",
-		"turning entry after round-off (turning in first flight phase)?",
-		"Facing the coming direction when handstand on vault
-		(0.5 turn in first flight phase)?",
-		"Body keep stretched  during salto (stretched salto)?",
-		"Salto with turn?",
-		"Facing vault table after landing?",
-		"Salto with 1.5 turn?"
-	],
-	"code": "5.20"
-},
-...
-			</pre><table>
-			
-			</table>
-			The example shows the questions related to each class.
-			The identifier corresponds to the label name provided in <a href="https://sdolivia.github.io/FineGym/resources/dataset/gym530_categories_wset.txt">Gym530 category list</a>.
-			Each class includes (1) a list of questions that are asked ('quetions'),
-			(2) a string of binary codes ('BTcode') where 1 refers to 'yes' and 0 refers to 'no',
-			(3) and original code in the <a href="http://www.fig-gymnastics.com/publicdir/rules/files/en_WAG%20CoP%202017-2020.pdf">official codebook</a>.
-		
-	   		   
-		 
-		 <br><br>
-		 <hr>
-
 		 <center><h1>Paper</h1></center><table align="center" width="720px">
 			
 			   <tbody><tr>

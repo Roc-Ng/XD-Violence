@@ -257,28 +257,6 @@
 		   <br><br>
 		  <hr>
 
-		  <center><h1>Dataset hierarchy</h1></center><table align="center" width="720px">
-			
-			<tbody><tr>
-				<td width="400px">
-				  <center>
-					  <a><img class="rounded" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/hierarchy.png" width="800px"></a><br>
-				</center>
-				</td>
-			</tr>
-				<tr><td width="400px">
-				  <center>
-					  <span style="font-size:14px"><i>
-						FineGym organizes both the semantic and temporal annotations hierarchically.
-						The upper part shows three levels of categorical labels, namely events (e.g. balance beam), sets (e.g. dismounts) and elements (e.g. salto forward tucked).
-						The lower part depicts the two-level temporal annotations, i.e. the temporal boundaries of actions (in the top bar) and sub-action instances (in the bottom bar).
-						</i>
-				</span></center>
-				</td>
-
-		  </tr></tbody></table>
-	      <br><br>
-		  <hr>
 
 		  <center><h1>Sub-action examples</h1></center><center>
 				<span>
@@ -395,39 +373,13 @@
 			<br>
 
 			<center><h2> Three Traits </h2></center>
-				1) large scale, which is beneficial for training generalizable methods for violence detection; 
-                2) diversity of scenarios, so that violence detection methods actively respond to complicated and diverse environments and are more robust; 
-				3) containing audio signals, making algorithms leverage multimodal information and more confidence;
+				1) large scale, which is beneficial for training generalizable methods for violence detection; <br>
+                2) diversity of scenarios, so that violence detection methods actively respond to complicated and diverse environments and are more robust; <br>
+				3) containing audio signals, making algorithms leverage multimodal information and more confidence; <br>
 				4) multi labels, We assign multi violent labels (1 ≤ #labels ≤ 3) to each violent video owing to the co-occurrence of violent events. The order of labels of each video is based on the importance of different violent events occurring in the video. 
 				
 			<br>
 			
-			<center><h2> (4) Why pose information does not help? </h2></center>
-				Skeleton-based ST-GCN struggles due to the challenges in skeleton estimation on gymnastics instances.
-				<table>
-				<tbody><tr>
-					<td width="400px">
-					<center>
-						<a><img onmouseover="this.src=&#39;./resources/examples/pose_slow.gif&#39;;" onmouseout="this.src=&#39;./resources/examples/pose.gif&#39;;" src="./FineGym_ A Hierarchical Video Dataset for Fine-grained Action Understanding_files/pose.gif" width="400px"></a>
-					</center>
-					</td>
-				</tr>
-				<tr>
-					<td align="center" width="720px">
-					<span style="font-size:14px"><i>
-					The results of person detection and pose estimation using <a href="https://github.com/MVIG-SJTU/AlphaPose">AlphaPose</a> for a Vault routine.
-					It can be seen that detections and pose estimations of the gymnast are missed in multiple frames, especially in frames with intense motion.
-					These frames are important for fine-grained recognition. (Hover on the GIF for a 0.25x slowdown) </i>
-					</span>
-					</td>
-				</tr>
-				</tbody></table>
-					
-		
-	      <br><br>
-		  <hr>
-
-
 		  <center><h1>Download</h1></center><table id="download" align="center" width="720px">
 			
 			<tbody><tr>
