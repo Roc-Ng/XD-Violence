@@ -1,0 +1,1 @@
+We oversample each video frame with the “5-crop” augment, so in the video features (i3d features), _0 means the center, and _1~ _4 means the 4 corners.
