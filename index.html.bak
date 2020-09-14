@@ -241,7 +241,7 @@
 				</tr></tbody></table><table align="center" width="720px">
 					<tbody><tr>
 						<td align="center" width="500px">
-							<a><video width="480" height="360" controls><source src="./images/long.mp4"  type="video/mp4"></video></a>
+							<a><video width="480" height="270" controls><source src="./images/long.mp4"  type="video/mp4"></video></a>
 						</td>
 					  </tr>
 					<tr>
@@ -449,10 +449,15 @@
 					<span style="font-size:16px"><a href="https://stuxidianeducn-my.sharepoint.com/:t:/g/personal/pengwu_stu_xidian_edu_cn/EVWktpfZoT1BqahOCzvie_UB6aeitUGU94aZDgydsQHTMw?e=fkRIr0">Test Annotations</a></span><br>
 					<br>
 					<span style="font-size:24px">V1.0 Features</span><br><br>
+
+					<span style="font-size:20px">Baidu Netdisk</span><br>
+					<span style="font-size:16px"><a href="https://pan.baidu.com/s/1by68kNZdShMRTRQNROWYdw">audio features (VGGish)</a></span> [keyword:i9h2]<br>
+					<span style="font-size:16px"><a href="https://pan.baidu.com/s/1v834-ssE4myYNu--qzbpVQ">visual features (I3D RGB&Flow)</a></span> [keyword:ou1n]<br>
+					<span style="font-size:16px"><a href="https://roc-ng.github.io/XD-Violence/images/ReadMe2.md">ReadMe</a></span><br><br>
 					<span style="font-size:20px">OneDrive</span><br>
 					<span style="font-size:16px"><a href="https://stuxidianeducn-my.sharepoint.com/:u:/g/personal/pengwu_stu_xidian_edu_cn/EUyJX2Pb67tMhdkzxGRmdUMBD-vhDSjlnl-VeY1DvUM3ug?e=SHcfaj">audio features (VGGish)</a></span><br>
 					<span style="font-size:16px"><a href="https://stuxidianeducn-my.sharepoint.com/:u:/g/personal/pengwu_stu_xidian_edu_cn/EYcpIgLj2TxKhlPlWcfjsZ4Bbe5tz7AbqH_eP3ZzM6Ul-Q?e=yRpwqq">visual features (I3D RGB&Flow)</a></span><br>
-					<span style="font-size:16px"><a href="https://roc-ng.github.io/XD-Violence/images/ReadMe2.md">ReadMe</a></span><br>
+					<br>
 
 					</center>
 				</td>
